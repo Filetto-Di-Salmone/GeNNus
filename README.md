@@ -1,2 +1,2 @@
 # GeNNus
-Training a set of music genre classification as a proxy for multiple analytical studies
+Final project of the **Fundamentals of Data Science** exam, taught by Prof. **Fabio Galasso** at **Sapienza University of Rome** in A.Y. 2022/23
