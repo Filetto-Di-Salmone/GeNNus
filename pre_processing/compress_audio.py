@@ -32,9 +32,9 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-DATASET_SIZE = "extra_small"
+DATASET_SIZE = "large"
 DATASET_NAME = f"fma_{DATASET_SIZE}_organized_by_label_resampled_rechanneled"
-DATASET_FOLDER = "./data/"
+DATASET_FOLDER = "../data/audio/"
 
 dataset_path = DATASET_FOLDER + DATASET_NAME
 
