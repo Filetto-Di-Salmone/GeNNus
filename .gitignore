@@ -167,3 +167,5 @@ cython_debug/
 
 *.mp3
 # *.png
+
+resources/*.pdf
