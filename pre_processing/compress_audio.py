@@ -30,10 +30,17 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
   "-g", "--genres", help="List of genres to compress", nargs='+', default=[]
 )
+parser.add_argument(
+  "-c", "--channels", help="Number of audio channels", default=2
+)
+
+parser.add_argument(
+  "-r", "--sample-rate", help="Sample rate in kHz", default=44100
+)
 args = parser.parse_args()
 
-DATASET_SIZE = "large"
-DATASET_NAME = f"fma_{DATASET_SIZE}_organized_by_label_resampled_rechanneled"
+DATASET_SIZE = "xl"
+DATASET_NAME = f"fma_{DATASET_SIZE}_resampled_{args.sample_rate}_rechanneled_{args.channels}"
 DATASET_FOLDER = "../data/audio/"
 
 dataset_path = DATASET_FOLDER + DATASET_NAME
@@ -52,7 +59,10 @@ for path, subdirs, files in os.walk(dataset_path):
         )
 
         os.system(
-          f"ffmpeg -i {file_audio_path} -ac 1 -ar 8000 -c:a libmp3lame -q:a 0 {new_file_audio_path} -y -hide_banner -loglevel error"
+          f"ffmpeg -i {file_audio_path} " + 
+          f"-ac {args.channels} -ar {args.sample_rate} " + 
+          f"-c:a libmp3lame -q:a 0 {new_file_audio_path} " + 
+          f"-y -hide_banner -loglevel error"
         ) 
         
         os.system(f"rm -f {file_audio_path}")  
