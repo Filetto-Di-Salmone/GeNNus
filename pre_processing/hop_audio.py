@@ -1,3 +1,7 @@
+"""
+Set of utilities to perform audio hopping
+"""
+
 import torch
 from torch.utils.data import Dataset
 

@@ -1,3 +1,8 @@
+"""
+Utility script to rechannel and resample mp3 files in batch, with a nice
+CLI and TQDM progress bar
+"""
+
 import torch
 from torch.utils.data import Dataset
 
