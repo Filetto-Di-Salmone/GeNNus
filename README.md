@@ -1,6 +1,7 @@
 # GeNNus, FDS project:
 
 ## Content description
+`src`: source codes for various utility scripts that have been used in the pre-processing stages 
 
 
 `AUTHORS`:
