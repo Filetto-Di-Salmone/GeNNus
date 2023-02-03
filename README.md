@@ -1,12 +1,10 @@
-# GeNNus, FDS project:
+# GeNNus
 
-## Content description
-`src`: source codes for various utility scripts that have been used in the pre-processing stages 
+## Deep Neural Networks for music genre classification as a proxy for multiple analytical studies 
 
+## Authors
 
-`AUTHORS`:
-
-`Name`: Paolo Barba `Matricola`: 1885324 `Email`: barba.1885324@studenti.uniroma1.it <br>
-`Name`: Francesca Gasbarri `Matricola`: 1900644 `Email`: gasbarri.1900644@studenti.uniroma1.it <br>
-`Name`: Sara Pepe `Matricola`: 2031951 `Email`: pepe.2031951@studenti.uniroma1.it <br>
-`Name`: Francesco Redaelli `Matricola`: 2039054 `Email`: redaelli.2039054@studenti.uniroma1.it <br>
+* [Paolo Barba](https://github.com/PaoloBarba)
+* [Simone Facchiano](https://github.com/simonefacchiano)
+* [Matteo Rampolla](https://github.com/MRampo)
+* [Daniele Solombrino](https://github.com/dansolombrino)
